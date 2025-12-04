@@ -1,2 +1,0 @@
-#TestRepository
-hello, World
