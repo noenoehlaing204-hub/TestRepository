@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+actor Student
+
+rectangle "el-Campus" {
+    usecase "小テスト" as Test
+    usecase "お知らせ閲覧" as Notice
+    usecase "課題提出" as Submit
+}
+
+Student --> Test
+Student --> Notice
+Student --> Submit
+
+@enduml
