@@ -1,0 +1,31 @@
+@startuml
+actor "学生" as Student
+actor "教員" as Teacher
+actor "事務局" as Admin
+
+rectangle "el-Campus" {
+  usecase "授業資料閲覧" as UC1
+  usecase "課題提出" as UC2
+  usecase "成績確認" as UC3
+}
+
+rectangle "UNIVERSAL PASSPORT" {
+  usecase "履修登録" as UC4
+  usecase "時間割確認" as UC5
+  usecase "休講情報確認" as UC6
+}
+
+Student --> UC1
+Student --> UC2
+Student --> UC3
+Student --> UC4
+Student --> UC5
+Student --> UC6
+
+Teacher --> UC1
+Teacher --> UC2
+Teacher --> UC3
+
+Admin --> UC4
+Admin --> UC6
+@enduml
