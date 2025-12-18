@@ -1,0 +1,15 @@
+@startuml
+
+participant mainfunction as "メイン関数"
+participant calculate as "calculate()関数"
+participant getinput as "getInput()関数"
+
+mainfunction -> calculate : データを計算
+calculate -> getinput : 計算結果を得る
+getinput --> calculate : 入力データを返す
+calculate --> mainfunction : 計算結果を返す
+
+@enduml
+
+
+
